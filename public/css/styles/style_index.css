@@ -1,0 +1,485 @@
+/* frame */
+#frame {
+  background-color: #e8e8e8;
+  width: 1172px;
+  height: 665px;
+}
+.wrap_frame {
+  width: 100%;
+  background: #e8e8e8;
+}
+/* ======================== Основной контент ======================== */
+#wrap_category {
+  width: 1162px;
+  margin: 0 auto;
+}
+.column_category {
+  margin-right: 21px;
+  margin-left: 0px;
+  width: 560px;
+  float: left;
+}
+.high_category {
+  height: 542px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.low_category {
+  height: 261px;
+  margin-bottom: 20px;
+}
+#category_men {
+  background-image: url(../../img/img/men.png);
+}
+#category_accesories {
+  background-color: #dadad2;
+}
+#category_women {
+  background-image: url(../../img/img/women.png);
+}
+#category_kids {
+  background-image: url(../../img/img/kids.png);
+}
+#label_category_men {
+  position: relative;
+  background-color: #ffffff;
+  width: 175px;
+  height: 82px;
+  margin-left: 0px;
+  margin-top: 26px;
+  float: left;
+}
+#wrap_text_category_men {
+  position: relative;
+  margin-left: 19px;
+  margin-top: 16px;
+  float: left;
+}
+#text_category_men_1 {
+  font-family: LatoRegular;
+  color: #222222;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 900;
+  text-align: left;
+}
+#text_category_men_2 {
+  font-family: LatoRegular;
+  color: #f16d7f;
+  font-size: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 900;
+  text-align: left;
+}
+#label_category_accesories {
+  position: relative;
+  background-color: #ffffff;
+  width: 225px;
+  height: 82px;
+  margin-left: 0px;
+  margin-top: 25px;
+  z-index: 3;
+  float: left;
+}
+#wrap_text_category_accesories {
+  position: relative;
+  margin-left: 18px;
+  margin-top: 16px;
+  z-index: 3;
+  float: left;
+}
+#text_category_accesories_1 {
+  position: relative;
+  font-family: LatoRegular;
+  color: #222222;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 900;
+  text-align: left;
+  z-index: 3;
+}
+#text_category_accesories_2 {
+  position: relative;
+  font-family: LatoRegular;
+  color: #f16d7f;
+  font-size: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 900;
+  text-align: left;
+  z-index: 3;
+}
+#img_category_accesories {
+  position: relative;
+  width: 560px;
+  height: 240px;
+  margin-left: 0px;
+  margin-top: 0px;
+  background-image: url(../../img/img/accesories.png);
+  z-index: 2;
+}
+#label_category_women {
+  position: relative;
+  background-color: #ffffff;
+  width: 162px;
+  height: 82px;
+  margin-left: 0px;
+  margin-top: 26px;
+  float: left;
+}
+#wrap_text_category_women {
+  position: relative;
+  margin-left: 18px;
+  margin-top: 16px;
+  float: left;
+}
+#text_category_women_1 {
+  font-family: LatoRegular;
+  color: #222222;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 900;
+  text-align: left;
+}
+#text_category_women_2 {
+  font-family: LatoRegular;
+  color: #f16d7f;
+  font-size: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 900;
+  text-align: left;
+}
+#label_category_kids {
+  position: relative;
+  background-color: #ffffff;
+  width: 180px;
+  height: 82px;
+  margin-left: 0px;
+  margin-top: 27px;
+  float: left;
+}
+#wrap_text_category_kids {
+  position: relative;
+  margin-left: 19px;
+  margin-top: 16px;
+  float: left;
+}
+#text_category_kids_1 {
+  font-family: LatoRegular;
+  color: #222222;
+  font-size: 18px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 900;
+  text-align: left;
+}
+#text_category_kids_2 {
+  font-family: LatoRegular;
+  color: #f16d7f;
+  font-size: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 900;
+  text-align: left;
+}
+/*Products*/
+#products_title {
+  font-family: LatoRegular;
+  color: #222222;
+  font-size: 30px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 54px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  width: 194px;
+  margin: 80px auto 0;
+}
+#products_subtitle {
+  font-family: LatoRegular;
+  color: #9f9f9f;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 3px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  width: 348px;
+  margin: 16px auto 0;
+}
+#wrap_products {
+  margin: 0 auto;
+  width: 1172px;
+}
+.product_item {
+  position: relative;
+  width: 261px;
+  margin-right: 32px;
+  margin-top: 60px;
+  float: left;
+}
+.product_item:hover {
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+}
+.img_product {
+  position: relative;
+  width: 100%;
+  height: 279px;
+}
+.product_name {
+  font-family: LatoRegular;
+  color: #222222;
+  font-size: 13px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: center;
+  margin-left: 14px;
+  margin-top: 20px;
+  height: 30px;
+}
+.product_price {
+  font-family: LatoRegular;
+  color: #f16d7f;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: center;
+  margin-left: 13px;
+  margin-top: 17px;
+}
+#product_1 {
+  background-image: url(../../img/img/product1.png);
+}
+#product_2 {
+  background-image: url(../../img/img/product2.png);
+}
+#product_3 {
+  background-image: url(../../img/img/product3.png);
+}
+#product_4 {
+  background-image: url(../../img/img/product4.png);
+}
+#product_5 {
+  background-image: url(../../img/img/product5.png);
+}
+#product_6 {
+  background-image: url(../../img/img/product6.png);
+}
+#product_7 {
+  background-image: url(../../img/img/product7.png);
+}
+#product_8 {
+  background-image: url(../../img/img/product8.png);
+}
+#wrap_toProducts {
+  position: relative;
+  background-color: #f16d7f;
+  width: 212px;
+  height: 48px;
+  margin: 79px auto 0;
+}
+#wrap_toProducts:hover {
+  background-color: #c36262;
+  cursor: pointer;
+}
+#toProducts {
+  font-family: LatoRegular;
+  color: #ffffff;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 10px;
+  /* Приближение из-за подстановки шрифтов */
+  /*text-align: center;*/
+  margin-left: 24px;
+  margin-top: 18px;
+  float: left;
+}
+#icon_toProducts {
+  color: #ffffff;
+  font-size: 15px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 23px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: center;
+  margin-left: 9px;
+  margin-top: 11px;
+  float: left;
+}
+#a_toproducts {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/*Реклама*/
+#a_commerce {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#wrap_commerce {
+  background-color: #222224;
+  width: 1140px;
+  height: 529px;
+  margin: 113px auto 0;
+}
+#commerce_img {
+  width: 767px;
+  height: 529px;
+  background-image: url(../../img/img/commerce.png);
+  float: left;
+}
+#commerce_img_cover {
+  width: 767px;
+  height: 529px;
+  margin-left: 0px;
+  margin-top: 0px;
+  background-image: url(../../img/img/commerce_cover.png);
+}
+#wrap_commerce_text {
+  margin-left: 39px;
+  margin-top: 146px;
+  float: left;
+}
+#commerce_text_discount {
+  font-family: LatoRegular;
+  color: #ffffff;
+  font-size: 53.62px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: left;
+  float: left;
+}
+#commerce_text_offer {
+  font-family: LatoRegular;
+  color: #f16d7f;
+  font-size: 53.62px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: left;
+  float: left;
+}
+#commerce_text_category {
+  font-family: LatoRegular;
+  color: #ffffff;
+  font-size: 32.17px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: left;
+}
+#commerce_part_1 {
+  margin-left: 36px;
+  margin-top: 48px;
+  width: 284px;
+  float: left;
+}
+#commerce_icon_1 {
+  width: 45px;
+  height: 32px;
+  background-image: url(../../img/img/commerce_icon1.png);
+  margin-left: 0px;
+  margin-top: 0px;
+  float: left;
+}
+#commerce_name_1 {
+  font-family: LatoRegular;
+  color: #fbfbfb;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: left;
+  margin-left: 33px;
+  margin-top: 7px;
+  float: left;
+}
+#commerce_text_1 {
+  font-family: LatoRegular;
+  color: #fbfbfb;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  line-height: 24px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  width: 219px;
+  margin-left: 75px;
+  margin-top: 7px;
+  float: left;
+}
+#commerce_part_2 {
+  margin-left: 36px;
+  margin-top: 54px;
+  width: 284px;
+  float: left;
+}
+#commerce_icon_2 {
+  width: 40px;
+  height: 40px;
+  background-image: url(../../img/img/commerce_icon2.png);
+  margin-left: 0px;
+  margin-top: 0px;
+  float: left;
+}
+#commerce_name_2 {
+  font-family: LatoRegular;
+  color: #fbfbfb;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: left;
+  margin-left: 37px;
+  margin-top: 8px;
+  float: left;
+}
+#commerce_text_2 {
+  font-family: LatoRegular;
+  color: #fbfbfb;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  line-height: 24px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  width: 219px;
+  margin-left: 75px;
+  margin-top: 5px;
+  float: left;
+}
+#commerce_part_3 {
+  margin-left: 32px;
+  margin-top: 51px;
+  width: 284px;
+  float: left;
+}
+#commerce_icon_3 {
+  width: 47px;
+  height: 35px;
+  background-image: url(../../img/img/commerce_icon3.png);
+  margin-left: 0px;
+  margin-top: 0px;
+  float: left;
+}
+#commerce_name_3 {
+  font-family: LatoRegular;
+  color: #fbfbfb;
+  font-size: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: left;
+  margin-left: 34px;
+  margin-top: 10px;
+  float: left;
+}
+#commerce_text_3 {
+  font-family: LatoRegular;
+  color: #fbfbfb;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 300;
+  line-height: 24px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  width: 219px;
+  margin-left: 79px;
+  margin-top: 12px;
+  float: left;
+}
+

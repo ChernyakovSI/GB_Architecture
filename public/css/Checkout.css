@@ -1,0 +1,241 @@
+* {
+  padding: 0;
+}
+label {
+  font-weight: normal;
+}
+#wrap_content {
+  width: 1100px;
+  margin: -9px auto 0;
+}
+.part_title {
+  font-family: LatoBold;
+  color: #222222;
+  font-size: 16px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: left;
+  transform-origin: 50px 0px;
+}
+.part_content {
+  margin-left: 35px;
+  margin-top: 39px;
+  width: 100%;
+  float: left;
+}
+.label_txt {
+  font-family: LatoBold;
+  color: #222222;
+  font-size: 13px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: left;
+}
+.description {
+  font-family: LatoRegular;
+  color: #b3b2b2;
+  font-size: 13px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+.shipping_address_description1 {
+  margin-top: 15px;
+}
+#radio_group_entry {
+  margin-top: 14px;
+}
+.font_radio {
+  margin-top: 20px;
+  font-family: LatoBold;
+  color: #222222;
+  font-size: 12px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  text-align: right;
+  float: left;
+  clear: both;
+}
+.radio_description {
+  margin-left: 14px;
+  float: right;
+}
+.radio_description:hover {
+  cursor: pointer;
+}
+#as_guest:hover {
+  cursor: pointer;
+}
+#as_reg:hover {
+  cursor: pointer;
+}
+#shipping_address_label2 {
+  margin-top: 33px;
+  float: left;
+  clear: both;
+}
+.shipping_address_description2 {
+  margin-top: 15px;
+  float: left;
+  clear: both;
+}
+#shipping_address_description3 {
+  margin-top: 33px;
+  float: left;
+  clear: both;
+}
+#btn_continue {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #eaeaea;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 180px;
+  height: 50px;
+  margin-top: 38px;
+  margin-left: 12px;
+  font-family: LatoBold;
+  color: #4a4a4a;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 51px;
+  float: left;
+  clear: both;
+  -webkit-transition: background 0.7s;
+  -moz-transition: background 0.7s;
+  -o-transition: background 0.7s;
+}
+.part_content_left {
+  width: 500px;
+  float: left;
+}
+.part_content_right {
+  margin-left: 85px;
+  float: left;
+}
+.shipping_address_label4 {
+  margin-top: 27px;
+}
+.key_value:after {
+  content: "*";
+  font-family: LatoBold;
+  color: #ff0d0d;
+  font-size: 17px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+#email {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #eaeaea;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 390px;
+  height: 45px;
+  margin-top: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.shipping_address_label5 {
+  margin-top: 23px;
+}
+#password {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #eaeaea;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 390px;
+  height: 45px;
+  margin-top: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.shipping_address_label6 {
+  margin-top: 22px;
+}
+.important_text {
+  font-family: LatoBold;
+  color: #ff0d0d;
+  font-size: 13px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+#btns_login_group {
+  margin-top: 32px;
+}
+#btn_login {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #eaeaea;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 180px;
+  height: 50px;
+  font-family: LatoBold;
+  color: #4a4a4a;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  text-align: left;
+  padding-top: 4px;
+  padding-left: 55px;
+  float: left;
+  -webkit-transition: background 0.7s;
+  -moz-transition: background 0.7s;
+  -o-transition: background 0.7s;
+}
+#btn_login:hover {
+  background: #eeeeee;
+}
+#forgot_pass {
+  font-family: LatoBold;
+  color: #222222;
+  font-size: 14px;
+  /* Приближение из-за подстановки шрифтов */
+  font-weight: 400;
+  line-height: 20px;
+  /* Приближение из-за подстановки шрифтов */
+  text-align: left;
+  text-decoration: none;
+  margin-top: 16px;
+  margin-left: 32px;
+  float: left;
+}
+#forgot_pass:hover {
+  color: #bc5e5e;
+}
+.line_separator {
+  background-color: #e8e8e8;
+  width: 1140px;
+  height: 1px;
+  margin-top: 27px;
+}
+.part {
+  margin-top: 33px;
+}
+.add_gap {
+  margin-bottom: 80px;
+}
+.part_title:hover {
+  -moz-transform: scale(1.07, 1.07);
+  -webkit-transform: scale(1.07, 1.07);
+  -o-transform: scale(1.07, 1.07);
+  -ms-transform: scale(1.07, 1.07);
+  transform: scale(1.07, 1.07);
+  cursor: pointer;
+}
+#btn_continue:hover {
+  background-color: #eeeeee;
+}

@@ -1,0 +1,170 @@
+
+
+        <div id="main">
+            <div class="centrator">
+                <div id="wrap_category">
+                    <div class="column_category">
+                        <a href="#">
+                            <div class="high_category" id="category_men">
+                                <div id="label_category_men">
+                                    <div id="wrap_text_category_men">
+                                        <div id="text_category_men_1">HOT DEAL</div>
+                                        <div id="text_category_men_2">FOR MEN</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="low_category" id="category_accesories">
+                                <div id="label_category_accesories">
+                                    <div id="wrap_text_category_accesories">
+                                        <div id="text_category_accesories_1">LUXIROUS & TRENDY</div>
+                                        <div id="text_category_accesories_2">ACCESORIES</div>
+                                    </div>
+                                </div>
+                                <div id="img_category_accesories"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column_category">
+                        <a href="#">
+                            <div class="low_category" id="category_women">
+                                <div id="label_category_women">
+                                    <div id="wrap_text_category_women">
+                                        <div id="text_category_women_1">30% OFFER</div>
+                                        <div id="text_category_women_2">WOMEN</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="high_category" id="category_kids">
+                                <div id="label_category_kids">
+                                    <div id="wrap_text_category_kids">
+                                        <div id="text_category_kids_1">NEW ARRIVALS</div>
+                                        <div id="text_category_kids_2">FOR KIDS</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="products_title">Fetured Items</div>
+                <div id="products_subtitle">Shop for items based on what we featured in this week</div>
+                <div id="wrap_products">
+                    {% for item in items %}
+                    <a href={{ item.src }}>
+                        <div class="product_item">
+                            <img class="img_product" src={{ item.img }} class="img_product">
+                            <div class="product_name">{{ item.pname }}</div>
+                            <div class="product_price">{{ item.price }} руб.</div>
+                        </div>
+                    </a>
+                    {% endfor %}
+
+                    <!--<a href="#">
+                        <div class="product_item">
+                            <div class="img_product" id="product_1"></div>
+                            <div class="product_name">MANGO PEOPLE T-SHIRT</div>
+                            <div class="product_price">$52.00</div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="product_item">
+                            <div class="img_product" id="product_2"></div>
+                            <div class="product_name">MANGO PEOPLE T-SHIRT</div>
+                            <div class="product_price">$52.00</div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="product_item">
+                            <div class="img_product" id="product_3"></div>
+                            <div class="product_name">MANGO PEOPLE T-SHIRT</div>
+                            <div class="product_price">$52.00</div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="product_item">
+                            <div class="img_product" id="product_4"></div>
+                            <div class="product_name">MANGO PEOPLE T-SHIRT</div>
+                            <div class="product_price">$52.00</div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="product_item">
+                            <div class="img_product" id="product_5"></div>
+                            <div class="product_name">MANGO PEOPLE T-SHIRT</div>
+                            <div class="product_price">$52.00</div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="product_item">
+                            <div class="img_product" id="product_6"></div>
+                            <div class="product_name">MANGO PEOPLE T-SHIRT</div>
+                            <div class="product_price">$52.00</div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="product_item">
+                            <div class="img_product" id="product_7"></div>
+                            <div class="product_name">MANGO PEOPLE T-SHIRT</div>
+                            <div class="product_price">$52.00</div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="product_item">
+                            <div class="img_product" id="product_8"></div>
+                            <div class="product_name">MANGO PEOPLE T-SHIRT</div>
+                            <div class="product_price">$52.00</div>
+                        </div>
+                    </a>-->
+                </div>
+                <div class="clearfix"> </div>
+
+                <div id="wrap_toProducts">
+                    <a href="#" id="a_toProducts">
+                        <div id="toProducts">Browse All Product</div>
+                        <span id="icon_toProducts"><i class="fa fa-long-arrow-right"></i></span>
+                    </a>
+                </div>
+
+
+                <div class="clearfix"> </div>
+                <div id="wrap_commerce">
+                    <a href="#" id="a_commerce">
+                        <div id="commerce_img">
+                            <div id="commerce_img_cover">
+                                <div id="wrap_commerce_text">
+                                    <div id="commerce_text_discount">30%&nbsp;</div>
+                                    <div id="commerce_text_offer">OFFER</div>
+                                    <div id="commerce_text_category">FOR WOMEN</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="commerce_part_1">
+                            <div id="commerce_icon_1"></div>
+                            <div id="commerce_name_1">Free Delivery</div>
+                            <div id="commerce_text_1">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</div>
+                        </div>
+
+                        <div id="commerce_part_2">
+                            <div id="commerce_icon_2"></div>
+                            <div id="commerce_name_2">Sales & discounts</div>
+                            <div id="commerce_text_2">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</div>
+                        </div>
+
+                        <div id="commerce_part_3">
+                            <div id="commerce_icon_3"></div>
+                            <div id="commerce_name_3">Quality assurance</div>
+                            <div id="commerce_text_3">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</div>
+                        </div>
+
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>

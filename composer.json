@@ -1,0 +1,10 @@
+{
+  "name": "alexkex/simpleengine",
+  "description": "Framework for my students",
+  "type": "project",
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">= 7",
+    "twig/twig": "~1.27|~2.0"
+  }
+}

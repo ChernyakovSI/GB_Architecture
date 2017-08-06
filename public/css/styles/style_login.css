@@ -1,0 +1,171 @@
+
+
+#login_group {
+    width: 1000px;
+    margin: 15px auto 15px;
+}
+
+#login_form {
+    width: 425px;
+    border: solid black 1px;
+    float: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.incenter {
+    text-align: center;
+}
+
+/*#btn_login {
+    width: 70px;
+    margin-left: 50px;
+}*/
+
+
+
+#reg_form {
+    width: 425px;
+    border: solid black 1px;
+    float: right;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+#btn_reg {
+    width: 140px;
+    margin-left: 20px;
+}
+
+.shipping_address_description1 {
+    margin-top: 15px;
+}
+
+.description {
+    font-family: LatoRegular;
+    color: #b3b2b2;
+    font-size: 13px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 20px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.shipping_address_label4 {
+    margin-top: 27px;
+}
+
+.label_txt {
+    font-family: LatoBold;
+    color: #222222;
+    font-size: 13px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    text-align: left;
+}
+
+.key_value:after {
+    content: "*";
+    font-family: LatoBold;
+    color: #ff0d0d;
+    font-size: 17px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 20px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.shipping_address_label5 {
+    margin-top: 23px;
+}
+
+.shipping_address_label6 {
+    margin-top: 22px;
+}
+
+.important_text {
+    font-family: LatoBold;
+    color: #ff0d0d;
+    font-size: 13px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 20px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.btns_login_group {
+    margin-top: 32px;
+}
+
+.btn_login {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eaeaea;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 180px;
+    height: 50px;
+    font-family: LatoBold;
+    color: #4a4a4a;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+    padding-top: 4px;
+    padding-left: 55px;
+    margin-bottom: 5px;
+    float: left;
+    -webkit-transition: background 0.7s;
+    -moz-transition: background 0.7s;
+    -o-transition: background 0.7s;
+}
+.btn_login:hover {
+    background: #eeeeee;
+}
+
+#forgot_pass {
+    font-family: LatoBold;
+    color: #222222;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 20px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    text-decoration: none;
+    margin-top: 16px;
+    margin-left: 32px;
+    float: left;
+}
+#forgot_pass:hover {
+    color: #bc5e5e;
+}
+
+.email {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eaeaea;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 390px;
+    height: 45px;
+    margin-top: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.password {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #eaeaea;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    width: 390px;
+    height: 45px;
+    margin-top: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

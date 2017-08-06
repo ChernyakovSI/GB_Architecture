@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--<script src="https://code.jquery.com/jquery.min.js"></script>-->
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+    <script src= {{ js }} type="text/javascript"></script>
+    <script src="js/user.js" type="text/javascript"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--<link rel="stylesheet" href="css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!--<link rel="stylesheet/less" type="text/css" href="less/style.less">
+    <link rel="stylesheet/less" type="text/css" href="less/style_index.less">
+    <script src="js/less.js" type="text/javascript"></script>-->
+
+    <link rel="stylesheet" href="css/styles/style.css">
+    <link rel="stylesheet" href="css/styles/style_index.css">
+    <link rel="stylesheet" href={{ css }}>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="wrap_toppage">
+                <div id="toppage">
+                    <div id="logo">
+                        <div id="brand_img"></div>
+                        <div id="wrap_brand_txt">
+                            <div id="brand_txt">BRAN</div>
+                        </div>
+                    </div>
+
+                    <a href="#" id="browse_btn">
+                        <div id="wrap_browse_txt">
+                            <div id="browse_txt">Browse</div>
+                        </div>
+                        <div id="browse_img"><i class="fa fa-caret-down"></i></div>
+                    </a>
+
+                    <div id="wrap_search">
+                        <input type="search" id="search" placeholder="Search for Item..."/>
+                        <span class="icon_search"><i class="fa fa-search"></i></span>
+                    </div>
+
+
+                    <div id="toppage_right">
+                        <a href="/cart/" class="floatleft"><div id="basket"></div></a>
+
+                        <div id="account_btn">
+                            <!--<div id="wrap_account_txt">
+                                <div id="account_txt"> {{ username }} </div>
+                            </div>
+                            <div id="account_img"></div>-->
+                            <div class="btn-group">
+                                <div class="btn" id="wrap_account_txt">
+                                    <div class="select_text" id="account_txt"> {{ username }} </div>
+                                </div>
+                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" id="account_img">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Меню с переключением</span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><div class="menu_item_dropdown" id="logout">
+                                        <div class="option_text"> Выйти </div>
+                                    </div></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="menu">
+                <div id="menu_panel">
+                    <a href="/" class="menu_item">HOME</a>
+                    <a href="/" class="menu_item">MAN</a>
+                    <a href="/" class="menu_item">WOMEN</a>
+                    <a href="/" class="menu_item">KIDS</a>
+                    <a href="/" class="menu_item">ACCOSERIESE</a>
+                    <a href="/" class="menu_item">FEATURED</a>
+                    <a href="/" class="menu_item">HOT DEALS</a>
+                </div>
+            </div>
+
+            <div class="wrap_frame">
+                <div id="frame">
+
+                    <div id="red_line"></div>
+                    <div id="luxury_title">
+                        <div id="luxury_title_1">THE BRAND</div>
+                        <div id="luxury_title_2">OF LUXERIOUS</div>
+                        <div id="luxury_title_3">&nbsp;FASHION</div>
+                    </div>
+                    <div id="luxury_img"></div>
+                </div>
+            </div>
+
+        </div>

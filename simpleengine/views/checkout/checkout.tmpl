@@ -1,0 +1,81 @@
+    <div id="main">
+        <div id="wrap_content">
+            <div id="part_shipping_address">
+
+                <div class="part_title">01. SHIPPING ADRESS</div>
+                <div class="part_content">
+                    <div class="part_content_left">
+                        <form action="#">
+                            <div id="shipping_address_label1" class="label_txt">CHECK AS A GUEST OR REGICTER</div>
+                            <div class="shipping_address_description1 description">Register with us for future
+                                convenience
+                            </div>
+                            <div id="radio_group_entry">
+                                <div class="font_radio">
+                                    <input type="radio" value="guest" name="variant_entry" id="as_guest">
+                                    <label for="as_guest" class="radio_description">CHECKOUT AS GUEST</label>
+                                </div>
+                                <div class="font_radio">
+                                    <input type="radio" value="register" name="variant_entry" id="as_reg" checked>
+                                    <label for="as_reg" class="radio_description">REGISTER</label>
+                                </div>
+                            </div>
+                            <div id="shipping_address_label2" class="label_txt">REGISTER AND SAVE TIME!</div>
+                            <div class="shipping_address_description2 description">Register with us for future
+                                convenience
+                            </div>
+                            <div id="shipping_address_description3" class="description">&raquo; Fast and easy checkout
+                            </div>
+                            <div class="shipping_address_description2 description">&raquo; Easy access to your order
+                                history and status
+                            </div>
+                            <div id="btn_continue">CONTINUE</div>
+                        </form>
+                    </div>
+                    {% if user_id == 0 %}
+                    <div class="part_content_right">
+                        <form action="#">
+                            <div id="shipping_address_label3" class="label_txt">ALREADY REGISTED?</div>
+                            <div class="shipping_address_description1 description">Please log in below
+                            </div>
+                            <div class="shipping_address_label4 label_txt key_value">EMAIL ADDRESS</div>
+                            <input type="email" id="email">
+                            <div class="shipping_address_label5 label_txt key_value">PASSWORD</div>
+                            <input type="password" id="password">
+                            <div class="shipping_address_label6 important_text">* Required Fields</div>
+                            <div id="btns_login_group">
+                                <input type="submit" value="LOG IN" id="btn_login">
+                                <a href="#" id="forgot_pass">Forgot Password?</a>
+                            </div>
+
+                        </form>
+                    </div>
+                    {% endif %}
+
+                </div>
+
+            </div>
+            <div class="clearfix add_gap"></div>
+            <div class="line_separator"></div>
+            <div class="part">
+                <div class="part_title">02. BILLING INFORMATION</div>
+            </div>
+            <div class="line_separator"></div>
+            <div class="part">
+                <div class="part_title">03. SHIPPING INFORMATION</div>
+            </div>
+            <div class="line_separator"></div>
+            <div class="part">
+                <div class="part_title">04. SHIPPING METHOD</div>
+            </div>
+            <div class="line_separator"></div>
+            <div class="part">
+                <div class="part_title">05. PAYMENT METHOD</div>
+            </div>
+            <div class="line_separator"></div>
+            <div class="part">
+                <div class="part_title">06. ORDER REVIEW</div>
+            </div>
+            <div class="line_separator"></div>
+        </div>
+    </div>

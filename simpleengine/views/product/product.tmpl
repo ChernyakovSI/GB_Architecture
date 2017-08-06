@@ -1,0 +1,262 @@
+
+    <div id="subheader">
+        <div id="wrap_breadCrumps">
+            <div id="breadCrumps">
+                <a href="#" id="breadCrumps_title">
+                    NEW ARRIVALS
+                </a>
+                <div id="breadCrumps_title_elems">
+                    <a href="#" class="breadCrumps_elem">
+                        HOME
+                    </a>
+                    <div class="breadCrumps_elem">&nbsp;/&nbsp;</div>
+                    <a href="#" class="breadCrumps_elem">
+                        MEN
+                    </a>
+                    <div class="breadCrumps_elem">&nbsp;/&nbsp;</div>
+                    <a href="#" class="breadCrumps_elem red_text">
+                        NEW ARRIVALS
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="wrap_slider_top">
+            <div id="slider">
+                <div class="slider_prev slider_step" id="slider_prev">
+                    <i class="fa fa-angle-left"></i>
+                </div>
+                <div id="wrap_slider_img">
+                    {% for item in img %}
+                    {% if item == img[0] %}
+                        <div class="slide active">
+                        {% else %}
+                        <div class="slide">
+                        {% endif %}
+                        <a href= {{ item }} >
+                            <div id="slider_img">
+                                <img src= {{ item }} alt="Фотография товара" id="slider_img_view">
+                            </div>
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="slider_next slider_step" id="slider_next">
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="main">
+        <div id="wrap_content">
+            <div id="select_form">
+                <div id="wrap_form">
+                    <div id="form_title">WOMEN COLLECTION</div>
+                    <div id="form_separator_title">
+                        <div id="form_separator_title_red"></div>
+                    </div>
+                    <div id="form_product_name"> {{ name }} </div>
+                    <input type="hidden" name="product" value= {{ id }} id="product_id">
+                    <div id="form_product_description">Compellingly actualize fully researched processes before
+                        proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge
+                        services. Completely visualize parallel core competencies rather than exceptional portals.
+                    </div>
+                    <div id="from_product_params">
+                        <div id="from_product_material">
+                            <div class="from_product_name">MATERIAL:</div>
+                            <div class="from_product_value">&nbsp;COTTON</div>
+                        </div>
+                        <div id="from_product_designer">
+                            <div class="from_product_name">DESIGNER:</div>
+                            <div class="from_product_value">&nbsp;BINBURHAN</div>
+                        </div>
+                    </div>
+                    <div id="form_product_price"> {{ price }} </div>
+                    <div id="form_separator_params">
+                    </div>
+                    <div id="from_product_user_params">
+                        <div class="from_product_user_param">
+                            <div class="from_product_user_name">CHOOSE COLOR</div>
+                            <!--<input class="from_product_user_value" id="user_color" list="dl_colors" placeholder="Красный">
+                            <datalist id="dl_colors">
+                                <option label="Красный" value="red">
+                                <option label="Синий" value="blue">
+                                <option label="Черный" value="black">
+                                <option label="Белый" value="white">
+                            </datalist>-->
+
+                            <!--<div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Выпадающий список
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">HTML</a></li>
+                                    <li><a href="#">CSS</a></li>
+                                    <li><a href="#">JavaScript</a></li>
+                                </ul>
+                            </div>-->
+
+                            <div class="btn-group from_product_user_value">
+                                <div class="btn btn-default">
+                                    <div class="select_text" id="select_text_color">Цвет...</div>
+                                </div>
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Меню с переключением</span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu" id="ctrlColor">
+                                    {% for item in colors %}
+                                    <li><div class="menu_item_dropdown menu_item_dropdown_color">
+                                        <div class="color_square" style="background-color: {{ item }} ;">
+                                            <input type="hidden" name="color_code" value= {{ item }} class="color_code">
+                                        </div>
+                                        {% if item == "#bddefc" %}
+                                        <div class="option_text">Голубой</div>
+                                        {% elseif item == "#fafbfc" %}
+                                        <div class="option_text">Белый</div>
+                                        {% elseif item == "#f20707" %}
+                                        <div class="option_text">Краcный</div>
+                                        {% elseif item == "#050000" %}
+                                        <div class="option_text">Черный</div>
+                                        {% endif %}
+                                    </div></li>
+                                    {% endfor %}
+                                    <!--<li><a href="#" class="menu_item_dropdown">
+                                        <div class="color_square red_background"></div>
+                                        <div class="option_text">Красный</div>
+                                    </a></li>
+                                    <li><a href="#" class="menu_item_dropdown">
+                                        <div class="color_square blue_background"></div>
+                                        <div class="option_text">Синий</div>
+                                    </a></li>
+                                    <li><a href="#" class="menu_item_dropdown">
+                                        <div class="color_square white_background"></div>
+                                        <div class="option_text">Белый</div>
+                                    </a></li>
+                                    <li><a href="#" class="menu_item_dropdown">
+                                        <div class="color_square black_background"></div>
+                                        <div class="option_text">Черный</div>
+                                    </a></li>-->
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="from_product_user_param">
+                            <div class="from_product_user_name">CHOOSE SIZE</div>
+
+                            <div class="btn-group from_product_user_value">
+                                <div class="btn btn-default btn_width">
+                                    <div class="select_text" id="select_text_size">Размер...</div>
+                                </div>
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Меню с переключением</span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    {% for item in sizes %}
+                                    <li><div class="menu_item_dropdown menu_item_dropdown_size">
+                                        <div class="option_text"> {{ item }} </div>
+                                    </div></li>
+                                    {% endfor %}
+
+                                    <!--<li><a href="#" class="menu_item_dropdown">
+                                        <div class="option_text">XXL</div>
+                                    </a></li>
+                                    <li><a href="#" class="menu_item_dropdown">
+                                        <div class="option_text">XL</div>
+                                    </a></li>
+                                    <li><a href="#" class="menu_item_dropdown">
+                                        <div class="option_text">L</div>
+                                    </a></li>
+                                    <li><a href="#" class="menu_item_dropdown">
+                                        <div class="option_text">M</div>
+                                    </a></li>
+                                    <li><a href="#" class="menu_item_dropdown">
+                                        <div class="option_text">S</div>
+                                    </a></li>
+                                    <li><a href="#" class="menu_item_dropdown">
+                                        <div class="option_text">XS</div>
+                                    </a></li>-->
+                                </ul>
+                            </div>
+
+                            <!--<input class="from_product_user_value" id="user_size" list="dl_size" placeholder="XXL">
+                            <datalist id="dl_size">
+                                <option label="XS" value="XS">
+                                <option label="S" value="S">
+                                <option label="M" value="M">
+                                <option label="L" value="L">
+                                <option label="XL" value="XL">
+                                <option label="XXL" value="XXL">
+                            </datalist>-->
+                        </div>
+                        <div class="from_product_user_param">
+                            <div class="from_product_user_name">QUANTITY</div>
+                            <input type="number" class="from_product_user_value" id="user_quantity" placeholder="2">
+                        </div>
+                    </div>
+                    <div id="form_product_btn_add">
+                        <div id="form_product_btn_basket"></div>
+                        <div id="form_product_btn_text">Add to Cart</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="wrap_additional">
+                <div id="wrap_additional_title">
+                    YOU MAY LIKE ALSO
+                </div>
+
+                <div id="wrap_additional_products_all">
+                    <div id="wrap_additional_products" class="row">
+                        <div class="col-md-3">
+                            <a href="#" class="additional_products">
+                                <div class="product_additional_item">
+                                    <div class="wrap_img_additional_product">
+                                        <div class="img_additional_product" id="additional_product_1"></div>
+                                    </div>
+                                    <div class="product_name">BLAZE LEGGINGS</div>
+                                    <div class="product_price">$52.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#" class="additional_products">
+                                <div class="product_additional_item">
+                                    <div class="wrap_img_additional_product">
+                                        <div class="img_additional_product" id="additional_product_2"></div>
+                                    </div>
+                                    <div class="product_name">ALEXA SWEATER</div>
+                                    <div class="product_price">$52.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#" class="additional_products">
+                                <div class="product_additional_item">
+                                    <div class="wrap_img_additional_product">
+                                        <div class="img_additional_product" id="additional_product_3"></div>
+                                    </div>
+                                    <div class="product_name">AGNES TOP</div>
+                                    <div class="product_price">$52.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#" class="additional_products">
+                                <div class="product_additional_item">
+                                    <div class="wrap_img_additional_product">
+                                        <div class="img_additional_product" id="additional_product_4"></div>
+                                    </div>
+                                    <div class="product_name">SYLVA SWEATER</div>
+                                    <div class="product_price">$52.00</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,132 @@
+<div id="main">
+        <div id="wrap_content">
+            <div id="basket_table">
+                <div class="font_Title">
+                    <div class="product_details">PRODUCT DETAILS</div>
+                    <div class="unit_price">UNITE PRICE</div>
+                    <div class="quantity">QUANTITY</div>
+                    <div class="shipping">SHIPPING</div>
+                    <div class="subtotal">SUBTOTAL</div>
+                    <div class="action">ACTION</div>
+                </div>
+                <div class="line_separate"></div>
+                {% for item in products %}
+                <div class="basket_row">
+                    <input type="hidden" name="cart_position" value= {{ item.id }} class="cart_position">
+                    <a href= {{ item.src }} >
+                        <div class="product_details">
+                            <img src= {{ item.img }} alt="Фотография товара" class="basket_img" id="img_basket_1">
+                            <div class="basket_detail_box">
+                                <div class="basket_name"> {{ item.product_name }} </div>
+                                <div class="basket_color_group">
+                                    <div class="basket_title">Color:&nbsp;</div>
+                                    {% if item.color == "#bddefc" %}
+                                    <div class="basket_value">Голубой</div>
+                                    {% elseif item.color == "#fafbfc" %}
+                                    <div class="basket_value">Белый</div>
+                                    {% elseif item.color == "#f20707" %}
+                                    <div class="basket_value">Краcный</div>
+                                    {% elseif item.color == "#050000" %}
+                                    <div class="basket_value">Черный</div>
+                                    {% elseif item.color is null %}
+                                    <div class="basket_value">-</div>
+                                    {% else %}
+                                    <div class="basket_value"> {{ item.color }} </div>
+                                    {% endif %}
+                                </div>
+                                <div class="basket_size_group">
+                                    <div class="basket_title">Size:&nbsp;</div>
+                                    {% if item.psize is null %}
+                                    <div class="basket_value">-</div>
+                                    {% else %}
+                                    <div class="basket_value"> {{ item.psize }} </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="unit_price">
+                        <div class="basket_price"> {{ item.price }} </div>
+                    </div>
+                    <div class="quantity">
+                        <input type="number" class="basket_quantity" value= {{ item.quantity }} >
+                    </div>
+                    <div class="shipping">
+                        <div class="basket_shipping">FREE</div>
+                    </div>
+                    <div class="subtotal">
+                        <div class="basket_subtotal"> {{ item.str_total }} </div>
+                    </div>
+                    <div class="action">
+                        <i class="fa fa-times-circle basket_delete"></i>
+                    </div>
+                </div>
+                <div class="line_separate"></div>
+                {% endfor %}
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div id="panel_basket">
+                <div id="basket_clear">CLEAR SHOPPING CART</div>
+                <div id="basket_continue">CONTINUE SHOPPING</div>
+            </div>
+
+            <div id="bottom_panel_basket">
+                <div id="panel_col_1">
+                    <div id="title_shipping_address">SHIPPING ADRESS</div>
+                    <div class="btn-group" id="btn_country">
+                        <button type="button" class="btn btn-default btn-value-width">
+                            Bangladesh
+                        </button>
+                        <button type="button" class="btn btn-default dropdown-toggle btn-width" data-toggle="dropdown">
+                            <span class="caret"></span>
+                            <span class="sr-only">Меню с переключением</span>
+                        </button>
+                        <ul class="dropdown-menu btn-option-width" role="menu">
+                            <li><a href="#">
+                                <div class="option_text">Bangladesh</div>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="option_text">China</div>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="option_text">Korea</div>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="option_text">Singapure</div>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="option_text">Japan</div>
+                            </a></li>
+                            <li><a href="#">
+                                <div class="option_text">India</div>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <input type="text" id="state" placeholder="State">
+                    <input type="text" id="zip" placeholder="Postcode / Zip">
+                    <div id="btn_quote">GET A QUOTE</div>
+                </div>
+                <div id="panel_col_2">
+                    <div id="title_coupon_discount">COUPON DISCOUNT</div>
+                    <div id="label_coupon">Enter your coupon code if you have one</div>
+                    <input type="text" id="coupon_code" placeholder="Coupon code">
+                    <div id="btn_apply_coupon">APPLY COUPON</div>
+                </div>
+                <div id="panel_col_3">
+                    <div id="subtotal_group">
+                        <div id="subtotal_group_value"> {{ sum }} </div>
+                        <div id="subtotal_group_title">SUB TOTAL</div>
+                    </div>
+                    <div id="grandtotal_group">
+                        <div id="grandtotal_group_value"> {{ sum }} </div>
+                        <div id="grandtotal_group_title">GRAND TOTAL</div>
+                    </div>
+                    <div class="line_separate_total"></div>
+                    <div id="btn_procced_checkout">PROCEED TO CHECKOUT</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
