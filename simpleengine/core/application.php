@@ -38,6 +38,9 @@ class Application {
         $class = "\\simpleengine\\" . $this->router->getPackage() . "\\" . $this->router->getController();
         $method = "action" . ucfirst($this->router->getAction());
 
+        //var_dump(class_exists($class));
+        //exit();
+
         if(class_exists($class)){
             $controller = new $class;
             $controller->setRequestedAction($this->router->getAction());

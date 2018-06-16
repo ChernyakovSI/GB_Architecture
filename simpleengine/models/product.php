@@ -9,6 +9,10 @@
 namespace simpleengine\models;
 
 use simpleengine\core\Application;
+use simpleengine\models\DB\ProductsAR;
+use simpleengine\models\DB\ProductsGetAllBeginWith;
+use simpleengine\models\DB\ProductsGetById;
+use simpleengine\models\DB\Query;
 
 class Product
 {
@@ -76,42 +80,21 @@ class Product
     }
 
     public function getAllProducts($start = 0){
-        $app = Application::instance();
-        $arr_products = $app->db()->getArrayBySqlQuery("
-SELECT 
-  p.id as id, 
-  p.product_name as pname, 
-  p.product_price as price, 
-  MIN(v.property_value) as img 
-FROM products p 
-LEFT JOIN product_properties_values v 
-ON p.id = v.id_product and v.id_property = 1
-GROUP BY p.product_name, p.product_price, p.id
-ORDER BY p.id
-LIMIT ".$start.", 8");
+        $model = new ProductsGetAllBeginWith();
+        $arr_products = ProductsAR::execute($model, $start);
 
-        $img_dir = "img/goods/";
-        foreach($arr_products as &$value) {
+        $img_dir = "/img/goods/";
+        foreach($arr_products as &$value)
+        {
             $value["img"] = $img_dir.$value["img"];
-            $value["src"] = "product/?prod=".$value["id"];
+            $value["src"] = "index.php/product/?prod=".$value["id"];
         }
         return $arr_products;
     }
 
     public function getProduct($id){
-        $app = Application::instance();
-        $arr_product = $app->db()->getArrayBySqlQuery("
-SELECT 
-  p.id as id, 
-  p.product_name as pname, 
-  p.product_price as price, 
-  v.id_property as property, 
-  v.property_value as pvalue 
-FROM products p 
-LEFT JOIN product_properties_values v 
-ON p.id = v.id_product
-WHERE p.id = ".$id."
-ORDER BY v.id_property, v.property_value");
+        $model = new ProductsGetById();
+        $arr_product = ProductsAR::execute($model, $id);
 
         $img_dir = "img/goods/";
         $general = false;
