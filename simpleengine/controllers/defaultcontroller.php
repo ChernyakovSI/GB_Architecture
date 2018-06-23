@@ -9,8 +9,7 @@
 namespace simpleengine\controllers;
 
 
-use simpleengine\models\DefaultModel;
-use simpleengine\models\Product;
+use simpleengine\models\builders\ProductBuilder;
 use \simpleengine\core\Application;
 
 class DefaultController extends AbstractController
@@ -20,7 +19,8 @@ class DefaultController extends AbstractController
         $app = Application::instance();
         $c_user = $app->getCurrentUser()->getUser()->info();
 
-        $model = new Product();
+        $productBuilder = new ProductBuilder();
+        $model = $productBuilder->build();
 
         echo $this->render("top", [
             "css" => "css/styles/style_login1.css",

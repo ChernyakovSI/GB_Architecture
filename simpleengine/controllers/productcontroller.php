@@ -9,7 +9,7 @@
 namespace simpleengine\controllers;
 
 use \simpleengine\core\Application;
-use \simpleengine\models\Product;
+use simpleengine\models\builders\ProductBuilder;
 
 class ProductController extends AbstractController
 {
@@ -21,11 +21,11 @@ class ProductController extends AbstractController
         $c_user = $app->getCurrentUser()->getUser()->info();
 
         if (isset($get['prod']) AND ($get['prod'] > 0)){
-            $product = new Product($get['prod']);
+            $productBuilder = new ProductBuilder($get['prod']);
 
-            $id = $product->getId();
+            $id = $productBuilder->getId();
             if (isset($id)) {
-                $this->renderPage($product, $c_user);
+                $this->renderPage($productBuilder, $c_user);
             }
             else
             {
@@ -46,11 +46,11 @@ class ProductController extends AbstractController
         $c_user = $app->getCurrentUser()->getUser()->info();
 
         if (isset($get['prod']) AND ($get['prod'] > 0)){
-            $product = new Product($get['prod']);
+            $productBuilder = new ProductBuilder($get['prod']);
 
-            $id = $product->getId();
+            $id = $productBuilder->getId();
             if (isset($id)) {
-                $this->renderPage($product, $c_user);
+                $this->renderPage($productBuilder, $c_user);
             }
             else
             {
@@ -64,7 +64,7 @@ class ProductController extends AbstractController
 
     }
 
-    public function renderPage($product, $c_user) {
+    public function renderPage($productBuilder, $c_user) {
         echo $this->render("top", [
             "css" => "/css/styles/style_product.css",
             "js" => "/js/product_slider.js",
@@ -72,12 +72,12 @@ class ProductController extends AbstractController
         ]);
 
         echo $this->render("product", [
-            "img" => $product->getImg(),
-            "id" => $product->getId(),
-            "name" => $product->getName(),
-            "price" => $product->getPrice(),
-            "colors" => $product->getColors(),
-            "sizes" => $product->getSizes()
+            "img" => $productBuilder->getImg(),
+            "id" => $productBuilder->getId(),
+            "name" => $productBuilder->getName(),
+            "price" => $productBuilder->getPrice(),
+            "colors" => $productBuilder->getColors(),
+            "sizes" => $productBuilder->getSizes()
         ]);
         echo $this->render("bottom");
     }

@@ -8,11 +8,9 @@
 
 namespace simpleengine\models;
 
-use simpleengine\core\Application;
+use simpleengine\models\builders\ProductBuilder;
 use simpleengine\models\DB\ProductsAR;
 use simpleengine\models\DB\ProductsGetAllBeginWith;
-use simpleengine\models\DB\ProductsGetById;
-use simpleengine\models\DB\Query;
 
 class Product
 {
@@ -23,60 +21,13 @@ class Product
     private $colors = [];
     private $sizes = [];
 
-    /**
-     * @return array
-     */
-    public function getColors(): array
-    {
-        return $this->colors;
-    }
-
-    /**
-     * @return array
-     */
-    public function getSizes(): array
-    {
-        return $this->sizes;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getPrice()
-    {
-        return $this->price." руб.";
-    }
-
-    /**
-     * @return array
-     */
-    public function getImg(): array
-    {
-        return $this->img;
-    }
-
-    public function __construct($id = null){
-        if ($id > 0) {
-            if (!($this->getProduct($id) == true)) {
-                echo "Ошибка получения товара!";
-            }
-        }
+    public function __construct(ProductBuilder $productBuilder){
+        $this->id = $productBuilder->getId();
+        $this->name = $productBuilder->getName();
+        $this->price = $productBuilder->getPrice();
+        $this->img = $productBuilder->getImg();
+        $this->colors = $productBuilder->getColors();
+        $this->sizes = $productBuilder->getSizes();
     }
 
     public function getAllProducts($start = 0){
@@ -90,35 +41,5 @@ class Product
             $value["src"] = "index.php/product/?prod=".$value["id"];
         }
         return $arr_products;
-    }
-
-    public function getProduct($id){
-        $model = new ProductsGetById();
-        $arr_product = ProductsAR::execute($model, $id);
-
-        $img_dir = "img/goods/";
-        $general = false;
-        foreach($arr_product as &$value) {
-            if ($general == false) {
-                $this->id = $value["id"];
-                $this->name = $value["pname"];
-                $this->price = $value["price"];
-                $general = true;
-            }
-
-            if ($value["property"] == 1) {
-                $this->img[] = $img_dir.$value["pvalue"];
-            }
-
-            if ($value["property"] == 3) {
-                $this->colors[] = $value["pvalue"];
-            }
-
-            if ($value["property"] == 2) {
-                $this->sizes[] = $value["pvalue"];
-            }
-        }
-
-        return true;
     }
 }
